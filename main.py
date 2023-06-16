@@ -28,7 +28,7 @@ def main():
     while 1:
         response = get_request(s.PARSING_URL)
         if isinstance(response, Response):
-            s.logger.info(f"get news: {response.status_code}")
+            # s.logger.info(f"get news: {response.status_code}")
             if response.status_code == 401:
                 auth_tesmanian()
         else:

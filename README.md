@@ -31,8 +31,8 @@ Logfile: log_scraping.log
 ---
 ## Instruction for run 
 
-1. download script: 
-2. Open directory 'scrap_tesmanian': cd spa_comments/
+1. download script: `git clone https://github.com/mertwec/news_tesmanian.git`
+2. Open directory 'news_tesmanian': cd news_tesmanian/
 
 3. Initialize environment:
 ```
