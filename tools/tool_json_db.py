@@ -1,5 +1,6 @@
-import os
 import json
+import os
+
 import settings as s
 
 
@@ -12,11 +13,11 @@ def create_file(path_to_file: str) -> None:
     path_to_dir = os.path.split(path_to_file)[0]
     create_dir(path_to_dir)
     if not os.path.exists(path_to_file):
-        with open(path_to_file, 'w') as _:
+        with open(path_to_file, "w") as _:
             ...
 
 
-def save_data_as_json(data: dict, path_to_jfile: str, mode: str = 'w') -> None:
+def save_data_as_json(data: dict, path_to_jfile: str, mode: str = "w") -> None:
     with open(path_to_jfile, mode) as file_:
         json.dump(data, file_, indent=4, ensure_ascii=False)
 
